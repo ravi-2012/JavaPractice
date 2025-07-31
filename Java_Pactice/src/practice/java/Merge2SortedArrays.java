@@ -26,10 +26,10 @@ public class Merge2SortedArrays {
 			c[k++]=b[j++];
 		}
 		for(int z=0;z<c.length;z++) {
-			System.out.println(c[z]);
+			System.out.print(c[z]);
 		}
 		System.out.println();
-		Arrays.stream(c).forEach(z->System.out.println(z));
+		Arrays.stream(c).forEach(z->System.out.print(z));
 	}
 
 }

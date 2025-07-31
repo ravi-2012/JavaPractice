@@ -1,6 +1,7 @@
 package practice.java;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class SearchArrayElementAndShowIndex {
@@ -15,6 +16,22 @@ public class SearchArrayElementAndShowIndex {
 		}
 		return indicesList;
 	}
+	 public static List<Integer> indexOfMatchingElements(int[]a,int[]b )
+	    {
+	        List<Integer> indicesList= new ArrayList<>();
+	        for(int i=0;i<a.length;i++)
+	        {
+	            for(int j=0;j<b.length;j++)
+	            {
+	                if(a[i]==b[j])
+	                {
+	                    indicesList.add(j+1);
+	                }
+	            }
+	        }
+	        return indicesList;
+	    }
+	
 	public static void main(String[] args){
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Enter the number: ");

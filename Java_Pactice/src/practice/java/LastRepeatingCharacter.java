@@ -46,7 +46,7 @@ public class LastRepeatingCharacter {
 
 	public static void main(String[] args) {
 		
-		String str= "java";
+		String str= "rameshkumar";
 		//lastreapeatingChar(str);
 		// TODO Auto-generated method stub
 		

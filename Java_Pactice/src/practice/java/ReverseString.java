@@ -10,7 +10,19 @@ public class ReverseString {
         rev= rev+ str.charAt(i);
     }
     return rev;
-}
+    }
+    
+    public static void reverseStringWithSpaces(char[] c,int start,int end) {
+    	
+    	while(start<end) {
+    		char temp= c[start];
+    		c[start]=c[end];
+    		c[end]=temp;
+    		start++;
+    		end--;
+    	}
+    	
+    }
 
 	public static void main(String[] args) {
 
@@ -60,7 +72,20 @@ public class ReverseString {
             if(!(i==strArr.length-1))
             outPutString+= " ";
         }
-        System.out.print(outPutString);
+        System.out.println(outPutString);
+        
+        //-------------------------------------------------------------------------------------------//
+        
+        char[] cArr= str.toCharArray();
+        int start=0;
+        
+        for(int i=0;i<=cArr.length;i++) {
+        	if(i==cArr.length || cArr[i]== ' ') {
+        		reverseStringWithSpaces(cArr, start, i-1);
+        		start=i+1;
+        	}
+        }
+        String outPut= new String(cArr);
+        System.out.println(outPut);
 	}
-
 }

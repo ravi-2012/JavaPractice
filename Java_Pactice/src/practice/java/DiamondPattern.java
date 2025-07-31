@@ -29,15 +29,15 @@ public class DiamondPattern {
 			System.out.println(" ");
 		}
 
-		//lower Triangle
-		
-		for (int i = 1; i <= mid-1; i++) {
+		// lower Triangle
+
+		for (int i = 1; i <= mid - 1; i++) {
 			// Space
-			for (int s = 1; s <=i; s++) {
+			for (int s = 1; s <= i; s++) {
 				System.out.print(" ");
 			}
 			// star
-			for (int j = 1; j <= 2*(mid-i)-1; j++) {
+			for (int j = 1; j <= 2 * (mid - i) - 1; j++) {
 
 				System.out.print("*");
 			}
