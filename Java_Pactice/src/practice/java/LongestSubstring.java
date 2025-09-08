@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class LongestNonrepeatingSubstring {
+public class LongestSubstring {
 	
 	public static int lengthOfLongestSubstring(String s) {
 		TreeMap<String, Integer> storeMap= new TreeMap<>();
